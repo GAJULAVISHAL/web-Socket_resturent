@@ -3,9 +3,9 @@ import { WebSocketServer, WebSocket } from 'ws'
 
 const app = express()
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
-const httpServer = app.listen(PORT, () => {
+  const httpServer = app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
   console.log(`📡 WebSocket server is ready`);
 })

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const ws_1 = require("ws");
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 const httpServer = app.listen(PORT, () => {
     console.log(`🚀 Server is running on port ${PORT}`);
     console.log(`📡 WebSocket server is ready`);
